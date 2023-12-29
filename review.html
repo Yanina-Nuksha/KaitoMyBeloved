@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>review</title>
+  <link href="styles\css\main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="imagies/favicon.jpg">
+</head>
+
+<body>
+  <header>
+    <div>Kaito Kuroba <br> <i>aka Kaito Kid</i> Wiki</div>
+  </header>
+
+  <nav class="nav">
+    <a class="nav-item-link" href="mainPage.html">Home</a>
+    <div class="dropdown-nav">
+      <a class="nav-item-link" id="dropbtn"> Catigories </a>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="drop-item" href="mainInfo.html">General information</a>
+        <a class="drop-item" href="background.html">Background and personality</a>
+        <a class="drop-item" href="relationships.html">Relationships and other characters</a>
+        <a class="drop-item" href="disguises.html">Disguises as Kid</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+
+    <aside class="aside-left" style="background-image: url(imagies/side1.jpg); order: 1;"></aside>
+
+    <main style="background-image: url(imagies/1685181221_fons-pibig-info-p-biryuzovoe-nebo-fon-8.jpg); order: 2;">
+      <div id="main-container" style="height: 100vh;">
+        <form id="feedbackForm">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="email">Please rate the wiki:</label>
+
+          <div id="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5"></label>
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4"></label>
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3"></label>
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2"></label>
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1"></label>
+          </div>
+
+          <label for="message">Live your feedback:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="button-style" >Send</button>
+        </form>
+      </div>
+    </main>
+
+    <aside class="aside-right" style="background-image: url(imagies/doves.jpg); order: 3;"></aside>
+
+  </div>
+
+  <a href="#" id="signature"><img id="signature-img" height="100" src="imagies/Kaito_Kid_signature.png">
+    <svg width="0" height="0" viewbox="0 0 0 0">
+      <defs>
+        <filter id="filter">
+          <fecomponenttransfer>
+            <fefuncr type="discrete" tablevalues="0 0" />
+            <fefuncg type="discrete" tablevalues="0 0" />
+            <fefuncb type="discrete" tablevalues="0 0" />
+          </fecomponenttransfer>
+        </filter>
+      </defs>
+    </svg>
+  </a>
+
+  <footer>
+    <div class="row">
+      <div class="col-footer">
+        <div class="btn-group">
+          <a href="review.html"><button type="button"  class="footer-button  medium-blue">Leave feedback</button></a>
+          <a href="mainPage.html"><button type="button"  class="footer-button  medium-blue">Main</button></a>
+        </div>
+      </div>
+      <div class="col-footer">
+        <div id="link">
+          <a href="#">KaitoMyBeloved</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="styles\js\wiki.js"></script>
+  <script src="styles\js\feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+RemoveHandler .html .htm
+AddType application/x-httpsd-php .php .htm .html .phtml
+<!--AddType application/x-httpd-php .php .htm .html .phtml-->
+DirectoryIndex index.html
+Options -Indexes
+AddDefaultCharset UTF-8
+AddType text/x-component .htc
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteRule ^feedback\.php$ - [R=405,L]
+</IfModule>
